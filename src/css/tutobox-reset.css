@@ -1,0 +1,22 @@
+.tbox-bubbles {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.tbox-btn {
+    font-size: 1rem;
+    padding: 15px 20px;
+}
+
+.tbox-btn-prev {
+    background-color: transparent;
+    color: black;
+}
+
+.tbox-closer{
+    background-color: transparent;
+}
+.tbox{
+    color:black;
+}

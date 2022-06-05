@@ -1,0 +1,33 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #023e7e;
+  --ifm-color-primary-dark: #023871;
+  --ifm-color-primary-darker: #02356b;
+  --ifm-color-primary-darkest: #012b58;
+  --ifm-color-primary-light: #02448b;
+  --ifm-color-primary-lighter: #024791;
+  --ifm-color-primary-lightest: #0351a4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #28dbfb;
+  --ifm-color-primary-dark: #0bd6fa;
+  --ifm-color-primary-darker: #05cff3;
+  --ifm-color-primary-darkest: #04aac8;
+  --ifm-color-primary-light: #45e0fc;
+  --ifm-color-primary-lighter: #53e2fc;
+  --ifm-color-primary-lightest: #7ee9fd;
+  --ifm-background-color: #00041f;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@import "./utils.css";
+@import "./tutobox-reset.css";
