@@ -16,8 +16,8 @@ At least one of these attributes is required
 - `data-tuto`
 - `data-step`
 - `data-step-title`
-- ?`data-step-des`
-- ?`data-step-html`
+- `data-step-des` optional
+- `data-step-html` optional
 
 ## Exemple
 
@@ -64,7 +64,7 @@ At least one of these attributes is required
         data-tuto="front-end"
         data-step="2"
         data-step-title="Vue"
-        data-step-des="Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a ..."
+        data-step-des="Vue is a progressive framework for building user interfaces. It is designed from the ground up to be incrementally adoptable, ..."
         class="bg-purple-600 px-10 py-8 rounded-lg text-white text-3xl"
       >
         Vue.js
