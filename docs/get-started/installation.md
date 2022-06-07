@@ -11,16 +11,16 @@ You will find in this section how to install TutoBox.
 
 Nothing else to install.
 
-## Using CDN
+## Use CDN
 
 ### Add TutoBox CSS on your page
 
 ```html
-<link rel="stylesheet" href="" />
+<link rel="stylesheet" href="https://unpkg.com/tutobox@1/dist/index.min.css" />
 ```
 
 ### Add TutoBox JS on your page
 
-```js
-<script src=""></script>
+```html
+<script type="text/javascript" defer src="https://unpkg.com/tutobox@1/dist/index.min.js"></script>
 ```

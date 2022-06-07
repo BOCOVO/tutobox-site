@@ -7,20 +7,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TutoBox',
-  tagline: 'Learn TutoBox.',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  tagline: 'Learn how to use TutoBox.',
+  url: 'https://BOCOVO.github.io',
+  baseUrl: '/tutobox-site/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'bocovo', // Usually your GitHub org/user name.
-  projectName: 'tutobox-docs', // Usually your repo name.
+  organizationName: 'BOCOVO', // Usually your GitHub org/user name.
+  projectName: 'tutobox-site', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   githubHost: 'github.com',
-  githubPort: '22',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -69,12 +68,7 @@ const config = {
             label: 'Docs',
           },
           {
-            to: '/blog',
-            label: 'Blog',
-            position: 'right'
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/BOCOVO/tutobox',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,8 +82,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Exemple',
+                to: '/docs/category/exemples',
+              },
+              {
+                label: 'Concepts',
+                to: '/docs/category/concepts',
               },
             ],
           },
@@ -98,33 +96,25 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/tutobox',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                href: 'https://discordapp.com/invite/tutobox',
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/BOCOVO/tutobox',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} TutoBox. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} TutoBox. Built by Juste BOCOVO.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -136,15 +126,15 @@ const config = {
   ],
   scripts: [
     {
-      src:"http://localhost:1234/index.min.js",
+      src:"https://unpkg.com/tutobox@0/dist/index.min.js",
       defer: true,
     }
   ],
   stylesheets:[
-    "http://localhost:1234/index.min.css"
+    "https://unpkg.com/tutobox@0/dist/index.min.css"
   ],
   plugins: [
-    async function myPlugin(context, options) {
+    async function myPlugin() {
       return {
         name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
