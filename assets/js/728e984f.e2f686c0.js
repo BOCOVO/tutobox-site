@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktutobox_docs=self.webpackChunktutobox_docs||[]).push([[1356],{4156:function(t){t.exports=JSON.parse('{"label":"hola","permalink":"/tutobox-site/blog/tags/hola","allTagsPath":"/tutobox-site/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktutobox_docs=self.webpackChunktutobox_docs||[]).push([[3275],{4604:function(o){o.exports=JSON.parse('{"permalink":"/tutobox-site/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
