@@ -16,11 +16,11 @@ Nothing else to install.
 ### Add TutoBox CSS on your page
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tutobox@1/dist/index.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/tutobox@1.0/dist/index.min.css" />
 ```
 
 ### Add TutoBox JS on your page
 
 ```html
-<script type="text/javascript" defer src="https://unpkg.com/tutobox@1/dist/index.min.js"></script>
+<script type="text/javascript" defer src="https://unpkg.com/tutobox@1.0/dist/index.min.js"></script>
 ```

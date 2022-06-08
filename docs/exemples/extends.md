@@ -124,7 +124,7 @@ TutoBox.startTuto("back");  // to start tutorial back
 TutoBox.startTuto("front"); // to start tutorial front
 ```
 
-:::danger Take care
+:::caution Take care
 
 Always call `setExtendsHelpers` before `startTuto`. If not extending will not work as exepted.
 

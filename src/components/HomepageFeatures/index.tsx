@@ -1,70 +1,108 @@
+import Link from '@docusaurus/Link';
 import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import Button from '../Button';
+import CodeBlock from '@theme/CodeBlock';
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-};
+const Home = () => {
 
-const FeatureList: FeatureItem[] = [
-  {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-];
+  const runDemo = () => {
+    window.TutoBox.startTuto("demo")
+  }
 
-function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className=' mx-1 mt-10 text-center sm:mx-6 md:mx-10 lg:mx-40 '>
+      <h1 className=' text-7xl'>
+        A library to perform your users <br />
+        <span
+        data-tuto="demo"
+        data-step-des="This is what the library do"
+        data-step="1"
+        className='mt-1 text-blue-500'>Onboarding</span>
+      </h1>
+      <p className='text-center text-xl'>
+        Implement guides on your application to guide your users step by step in using your product.
+      </p>
+      <div className="my-5 flex justify-center">
+        <Button 
+        data-tuto="demo"
+        data-step-title="Start demo"
+        data-step-des="The button to start demo"
+        data-step="2"
+        onClick={runDemo}
+        className=' bg-slate-100 '>
+          See demo
+        </Button>
+        <Button 
+        data-tuto="demo"
+        data-step-title="Go to documentation"
+        data-step-des="Read about how to use TutoBox"
+        data-step="3"
+        className=' bg-blue-500  '>
+          <Link
+            className="text-white"
+            to="/docs/intro">
+            Read the docs
+          </Link>
+        </Button>
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+      <h2 className=' text-4xl mb-10'>Installation</h2>
+      <div
+      data-tuto="demo"
+      data-step-title="Using exemple"
+      data-step-des="This example gives you an idea of how to use TutoBox."
+      data-step="4">
+      <CodeBlock
+        language="html"
+        className=' text-left'
+        showLineNumbers>
+        {
+`<!-- Add TutoBox Css -->
+<link rel="stylesheet" href="https://unpkg.com/tutobox@1.0/dist/index.min.css" />
+`}
+      </CodeBlock>
+      <CodeBlock
+        language="html"
+        className=' text-left'
+        showLineNumbers>
+        {
+`<!-- Add TutoBox Js -->
+<script type="text/javascript" defer src="https://unpkg.com/tutobox@1.0/dist/index.min.js"></script>`
+}
+      </CodeBlock>
+      </div>
+      <h2 className=' text-4xl mb-10'>Using</h2>
+      <div
+      data-tuto="demo"
+      data-step-title="See how to install"
+      data-step-des="Add Css and Js on your page."
+      data-step="5">
+      <CodeBlock
+        language="html"
+        className=' text-left'
+        title="exemple.html"
+        showLineNumbers>
+        {
+`<button
+  data-tuto="create-post"
+  data-step-des="Click to publish the post"
+  data-step="5"
+>
+  Send
+</button>`
+}
+      </CodeBlock>
+      <CodeBlock
+        language="js"
+        className=' text-left'
+        title="index.js"
+        showLineNumbers>
+        {
+`TutoBox.startTuto("create-post")`
+}
+      </CodeBlock>
       </div>
     </div>
-  );
+  )
 }
 
-export default function HomepageFeatures(): JSX.Element {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+export default Home
