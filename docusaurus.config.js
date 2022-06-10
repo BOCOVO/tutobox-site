@@ -56,10 +56,6 @@ const config = {
     ({
       navbar: {
         title: 'TutoBox',
-        logo: {
-          alt: 'TutoBox logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {
             type: 'doc',
@@ -119,6 +115,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages:["typescript"]
       },
     }),
   themes: [

@@ -101,6 +101,7 @@ type ExtendsHelper = {
   keywords?: string[];
 };
 ```
+[_Read more_](../api/extends-helper) about ExtendsHelper attributes.
 
 ```js
 // define how the extending will take place.
