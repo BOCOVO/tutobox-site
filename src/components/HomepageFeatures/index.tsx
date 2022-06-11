@@ -29,7 +29,7 @@ const Home = () => {
         data-step-des="The button to start demo"
         data-step="2"
         onClick={runDemo}
-        className=' bg-slate-100 '>
+        className=' bg-slate-100 text-blue-500'>
           See demo
         </Button>
         <Button 
