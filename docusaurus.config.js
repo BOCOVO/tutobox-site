@@ -128,12 +128,12 @@ const config = {
   scripts: [
     {
       // https://unpkg.com/tutobox@0/dist/index.min.js
-      src:"https://unpkg.com/tutobox@0/dist/index.min.js",
+      src:"https://unpkg.com/tutobox@1/dist/index.min.js",
       defer: true,
     }
   ],
   stylesheets:[
-    "https://unpkg.com/tutobox@0/dist/index.min.css"
+    "https://unpkg.com/tutobox@1/dist/index.min.css"
   ],
   plugins: [
     async function myPlugin() {
