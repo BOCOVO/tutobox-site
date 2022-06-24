@@ -8,7 +8,7 @@ type ButtonProps = {
 const Button = ({ className="", children,onClick ,...rest}: ButtonProps) => {
 
     return (
-        <button {...rest} onClick={onClick} className={` cursor-pointer rounded-md px-6  py-4 m-4 font-bold text-lg shadow ${className}`}>
+        <button {...rest} onClick={onClick} className={` border-2 border-black cursor-pointer rounded-md px-6  py-4 m-4 font-bold text-lg shadow ${className}`}>
             {children}
         </button>
     )

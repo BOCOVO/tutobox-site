@@ -77,11 +77,11 @@ At least one of these attributes is required
 ### Run code
 
 ```js
-TutoBox.startTuto("back"); // to start tutorial back
-TutoBox.startTuto("front"); // to start tutorial front
+TutoBox.startTuto("back-end"); // to start tutorial back
+TutoBox.startTuto("front-end"); // to start tutorial front
 ```
 
 <div class="flex grid-cols-2 gap-5">
-    <RunButton tutoName="back" >Start tutoriel back</RunButton>
-    <RunButton tutoName="front" >Start tutoriel front</RunButton>
+    <RunButton tuto="back-end" >Start tutoriel back</RunButton>
+    <RunButton tuto="front-end" >Start tutoriel front</RunButton>
 </div>

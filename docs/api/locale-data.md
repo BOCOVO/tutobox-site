@@ -1,5 +1,6 @@
 ---
 title: Locales
+sibebar_position: 4
 ---
 
 # Locale Data

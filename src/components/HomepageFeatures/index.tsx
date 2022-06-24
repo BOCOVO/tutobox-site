@@ -73,8 +73,7 @@ const Home = () => {
       <h2 className=' text-4xl mb-10'>Using</h2>
       <div
       data-tuto="demo"
-      data-step-title="See how to install"
-      data-step-des="Add Css and Js on your page."
+      data-step-des="This is using exemple"
       data-step="5">
       <CodeBlock
         language="html"

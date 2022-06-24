@@ -8,6 +8,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
+      wrapperClassName='mx-2'
       title={`TutoBox | User Onboarding Library`}
       description="Implement guides on your application to guide your users step by step in using your product.">
       <main>

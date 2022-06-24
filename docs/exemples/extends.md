@@ -110,19 +110,19 @@ type ExtendsHelper = {
 
 TutoBox.setExtendsHelpers([
     {
-      tutoName: "back",     // the tutorial back
+      tutoName: "back-end",     // the tutorial back
       extendsTuto: "main",  // extends the tutorial main
     },
     {
-      tutoName: "front",    // the tutorial front
+      tutoName: "front-end",    // the tutorial front
       extendsTuto: "main",  // extends the tutorial main
     }
 ])
 
 // make sure to call setExtendsHelpers before startTuto
 
-TutoBox.startTuto("back");  // to start tutorial back
-TutoBox.startTuto("front"); // to start tutorial front
+TutoBox.startTuto("back-end");  // to start tutorial back
+TutoBox.startTuto("front-end"); // to start tutorial front
 ```
 
 :::caution Take care
@@ -132,8 +132,8 @@ Always call `setExtendsHelpers` before `startTuto`. If not extending will not wo
 :::
 
 <div class="flex grid-cols-2 my-4 gap-5">
-    <RunButton extendsTuto="main" tutoName="back" >Start tutoriel back</RunButton>
-    <RunButton extendsTuto="main" tutoName="front" >Start tutoriel front</RunButton>
+    <RunButton extendsTuto="main" tuto="back-end" >Start tutoriel back</RunButton>
+    <RunButton extendsTuto="main" tuto="front-end" >Start tutoriel front</RunButton>
 </div>
 
 :::tip Note

@@ -50,4 +50,4 @@ import RunButton from "@site/lib/RunButton";
 TutoBox.startTuto("startup");
 ```
 
-<RunButton tutoName="startup" />
+<RunButton tuto="startup" />

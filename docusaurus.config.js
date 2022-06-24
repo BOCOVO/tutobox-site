@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/tutobox-site/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -56,6 +56,10 @@ const config = {
     ({
       navbar: {
         title: 'TutoBox',
+         logo: {
+          alt: 'TutoBox logo',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'doc',
@@ -123,6 +127,7 @@ const config = {
   ],
   scripts: [
     {
+      // https://unpkg.com/tutobox@0/dist/index.min.js
       src:"https://unpkg.com/tutobox@0/dist/index.min.js",
       defer: true,
     }

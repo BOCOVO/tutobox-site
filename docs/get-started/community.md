@@ -3,12 +3,8 @@ sidebar_position: 5
 title: Community
 ---
 
-# Community
-## StackOverflow
-Explore existing questions or ask your own.
-
 ## Bug report
-Please open a bug report ticket on GitHub.
+Please open a bug report ticket on [GitHub](https://github.com/BOCOVO/tutobox/issues/new).
 
 ## Feature request
-Please file a feature request issue on GitHub.
+Please file a feature request issue on [GitHub](https://github.com/BOCOVO/tutobox/issues/new).
