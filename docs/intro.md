@@ -2,9 +2,7 @@
 sidebar_position: 1
 title: Introduction
 ---
-:::caution 
-I'm still working on the documantation
-:::
+
 # Introduction
 
 ## What does TutoBox mean ?
